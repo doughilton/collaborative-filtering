@@ -34,14 +34,22 @@ Completed Work:
 
 Turn all this work into a function
 
+Make everything lowercase, remove uncommon characters
+
+Match playlists on artists not just songs
+  Heavily weights playlists which are only one artist too much
+
+Penalize Playlists for their diversity
+  Heavily penalizes playlists which are just discographies
+  Bubbles songs up belonging to many playlists with large diversity of artists
+
+Penalize songs for how many playlists they appear on
+  Helps to find hidden gems
+  Works very well in conjunction with Playlist Diversity Penalization
+
+
 
 Current Work:
-
-Penalize playlists for their length
-  Divide by cube root of length of playlist
-  Play with this number, test with different playlists and results
-  Common artists, rare artists, artists across genres
-  Does this penalization value rely on other future scoring changes?
 
 
 
@@ -49,15 +57,10 @@ Future Work:
 
 Return how much each user song contributed to final score
 
-Penalize songs for how many playlists they appear on
-Helps to find hidden gems
-
 Both penalizations to be calculated before user submits list
 
 Do we do anything if a user submitted song is heavily penalized?
 What is a user submitted song is a hidden gem?
-
-Match playlists on artists not just songs
 
 Turn all this work into a function
 Additional parameter to change how the algorithm works?
@@ -72,8 +75,6 @@ Why are so many records skipped when importing data
 Is there a better data source?
 
 Find and handle NULL values
-
-Make everything lowercase, remove uncommon characters
 
 Are there any smaller artists?
 
